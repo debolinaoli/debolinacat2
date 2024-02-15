@@ -1,0 +1,13 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to the home page!</h1>
+    <p>This is the home page content. You can navigate to other pages using the following links:</p>
+    <ul>
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+        <li><a href="{% url 'about' %}">About Us</a></li>
+        <li><a href="{% url 'contact' %}">Contact Us</a></li>
+    </ul>
+{% endblock %}
